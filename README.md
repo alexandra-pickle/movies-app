@@ -2,7 +2,7 @@
 Angular front-end, NodeJS API, AWS RDS SQL database
 
 This is a very rudimentary app that allows the user to add movie information to the database and view a list of movies in the database.
-It's still needs more form validation, more unit tests, etc.
+This is very raw and nees form validation, more unit tests, secrets storage, etc.
 
 There are two apps to run:
 
