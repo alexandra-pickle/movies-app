@@ -1,0 +1,34 @@
+<div id="container">
+  <h1>Add Movie</h1>
+  <form [formGroup]="movieForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <label>Name</label>
+      <input type="text" formControlName="title" placeholder="Movie title" />
+    </div>
+
+    <div class="row">
+      <label>Director</label>
+      <input type="text" formControlName="director" placeholder="Director" />
+    </div>
+
+    <div class="row">
+      <label>Release year</label>
+      <input
+        type="number"
+        formControlName="releaseYear"
+        placeholder="Release year"
+      />
+    </div>
+
+    <div class="row">
+      <button type="submit">SAVE</button>
+    </div>
+  </form>
+
+  <h1>Movies</h1>
+  <div class="row" *ngFor="let m of movies">
+    <div class="title">{{ m.title }}</div>
+    <div>directed by {{ m.director }}</div>
+    <div>released in {{ m.releaseYear }}</div>
+  </div>
+</div>
